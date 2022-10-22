@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{52080A6C-6DF4-3F98-8DE3-F91C7C881183}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>libdshow</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
+    </ClCompile>
+    
+    
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <AdditionalLibraryDirectories />
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
+    </ClCompile>
+    
+    
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <AdditionalLibraryDirectories />
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\amextra.h" />
+    <ClInclude Include="include\amfilter.h" />
+    <ClInclude Include="include\cache.h" />
+    <ClInclude Include="include\checkbmi.h" />
+    <ClInclude Include="include\combase.h" />
+    <ClInclude Include="include\cprop.h" />
+    <ClInclude Include="include\ctlutil.h" />
+    <ClInclude Include="include\ddmm.h" />
+    <ClInclude Include="include\dllsetup.h" />
+    <ClInclude Include="include\dxmperf.h" />
+    <ClInclude Include="include\fourcc.h" />
+    <ClInclude Include="include\measure.h" />
+    <ClInclude Include="include\msgthrd.h" />
+    <ClInclude Include="include\mtype.h" />
+    <ClInclude Include="include\outputq.h" />
+    <ClInclude Include="include\perflog.h" />
+    <ClInclude Include="include\perfstruct.h" />
+    <ClInclude Include="include\pstream.h" />
+    <ClInclude Include="include\pullpin.h" />
+    <ClInclude Include="include\refclock.h" />
+    <ClInclude Include="include\reftime.h" />
+    <ClInclude Include="include\renbase.h" />
+    <ClInclude Include="include\schedule.h" />
+    <ClInclude Include="include\seekpt.h" />
+    <ClInclude Include="include\source.h" />
+    <ClInclude Include="include\stdafx.h" />
+    <ClInclude Include="include\streams.h" />
+    <ClInclude Include="include\strmctl.h" />
+    <ClInclude Include="include\sysclock.h" />
+    <ClInclude Include="include\transfrm.h" />
+    <ClInclude Include="include\transip.h" />
+    <ClInclude Include="include\videoctl.h" />
+    <ClInclude Include="include\vtrans.h" />
+    <ClInclude Include="include\winctrl.h" />
+    <ClInclude Include="include\winutil.h" />
+    <ClInclude Include="include\wxdebug.h" />
+    <ClInclude Include="include\wxlist.h" />
+    <ClInclude Include="include\wxutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\amextra.cpp" />
+    <ClCompile Include="src\amfilter.cpp" />
+    <ClCompile Include="src\amvideo.cpp" />
+    <ClCompile Include="src\arithutil.cpp" />
+    <ClCompile Include="src\combase.cpp" />
+    <ClCompile Include="src\cprop.cpp" />
+    <ClCompile Include="src\ctlutil.cpp" />
+    <ClCompile Include="src\ddmm.cpp" />
+    <ClCompile Include="src\dllentry.cpp" />
+    <ClCompile Include="src\dllsetup.cpp" />
+    <ClCompile Include="src\mtype.cpp" />
+    <ClCompile Include="src\outputq.cpp" />
+    <ClCompile Include="src\perflog.cpp" />
+    <ClCompile Include="src\pstream.cpp" />
+    <ClCompile Include="src\pullpin.cpp" />
+    <ClCompile Include="src\refclock.cpp" />
+    <ClCompile Include="src\renbase.cpp" />
+    <ClCompile Include="src\schedule.cpp" />
+    <ClCompile Include="src\seekpt.cpp" />
+    <ClCompile Include="src\source.cpp" />
+    <ClCompile Include="src\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\strmctl.cpp" />
+    <ClCompile Include="src\sysclock.cpp" />
+    <ClCompile Include="src\transfrm.cpp" />
+    <ClCompile Include="src\transip.cpp" />
+    <ClCompile Include="src\videoctl.cpp" />
+    <ClCompile Include="src\vtrans.cpp" />
+    <ClCompile Include="src\winctrl.cpp" />
+    <ClCompile Include="src\winutil.cpp" />
+    <ClCompile Include="src\wxdebug.cpp" />
+    <ClCompile Include="src\wxlist.cpp" />
+    <ClCompile Include="src\wxutil.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
